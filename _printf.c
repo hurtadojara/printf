@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _printf - print values
+* _printf - print the values
 * Description: twin of prinfts
 * @format: text and format values
 * @...: values
