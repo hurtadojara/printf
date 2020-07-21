@@ -13,15 +13,19 @@ int _printf(const char *format, ...)
 	va_list vl;
 
 	if (format == NULL)
-	{
 		return (-1);
-	}
 	va_start(vl, format);
 	while (format != NULL && format[i] != '\0')
 	{
 		int next = i + 1;
 
-		if ('%' == format[i])
+		if (format[i] == '%' && format[next] == '%' && format[next + 1] == '%')
+		{
+			i = i + 1;
+			next = i + 1;
+			_putchar('%');
+		}
+		else if ('%' == format[i])
 		{
 			if ('%' == format[next])
 			{
