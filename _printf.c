@@ -29,7 +29,8 @@ int _printf(const char *format, ...)
 			else if (format[next] == 'i' || format[next] == 'd' || format[next] == 's'
 			|| format[next] == 'c')
 			{
-			count += (f_controller(format[next]))(vl);
+				count--;
+				count += (f_controller(format[next]))(vl);
 				i++;
 			}
 		}
