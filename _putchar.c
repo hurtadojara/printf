@@ -1,11 +1,11 @@
 #include "holberton.h"
+#include "holberton.h"
 /**
- * _putchar - the print characters
- * @c: the char
- *
- * Return: 1- if is fine or -1 if not
+ * _putchar - print char to stdout
+ *@character: char to print
+ *Return: char
  */
-int _putchar(char c)
+int _putchar(char character)
 {
-	return (write(1, &c, 1));
+return (write(1, &character, 1));
 }
