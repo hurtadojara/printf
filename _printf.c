@@ -21,12 +21,13 @@ int _printf(const char *format, ...)
 
 		if ('%' == format[i])
 		{
-			if ('%' == format[next])//VERIFICAR LOS %%%
+			if ('%' == format[next])
 			{
 				_putchar('%');
 				i++;
 			}
-			else if (format[next] == 'i' || format[next] == 'd' || format[next] == 's' || format[next] == 'c')
+			else if (format[next] == 'i' || format[next] == 'd' || format[next] == 's'
+			|| format[next] == 'c')
 			{
 			count += (f_controller(format[next]))(vl);
 				i++;
