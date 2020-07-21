@@ -9,27 +9,32 @@
 */
 int _printf(const char *format, ...)
 {
-	long int i = 0, count = 0;
+	int i = 0, count = 0;
 	va_list vl;
 
 	if (format == NULL)
 		return (-1);
 	va_start(vl, format);
-	while (format && format[i] != '\0')
+	while (format != NULL && format[i] != '\0')
 	{
-		long int next = i + 1;
+		int next = i + 1;
 
 		if ('%' == format[i])
 		{
-			if ('\0' == format[next])
-				return (-1);
-			else if ('%' == format[next])
+			if ('%' == format[next])//VERIFICAR LOS %%%
 			{
-				_putchar('%'), i++, count++;
-			}		        			
+				_putchar('%');
+				i++;
+			}
+			else if (format[next] == 'i' || format[next] == 'd' || format[next] == 's' || format[next] == 'c')
+			{
+			count += (f_controller(format[next]))(vl);
+				i++;
+			}
 		}
 		else
-		_putchar(format[i]), count++;
+		_putchar(format[i]);
+		count++;
 		i++;
 	}
 	va_end(vl);
