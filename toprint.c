@@ -14,15 +14,21 @@ int (*f_controller(char cs))(va_list)
 		{'s', f_string},
 		{'\0', fe_1}};
 
-	if (cs == '\0')
-	{
-		return (fe_1);
-	}
 	while (managerArr[i].cs != '\0')
 	{
 		if (cs == managerArr[i].cs)
 			return (managerArr[i].f);
 		i++;
 	}
-    return(0);
+	if (cs == '\0')
+	{
+		return (fe_1);
+	}
+	else
+	{
+		_putchar('%');
+		_putchar(cs);
+		return (fe_2);
+	}
+	return (0);
 }
