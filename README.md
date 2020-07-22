@@ -28,6 +28,7 @@ It is a project created for [Holberton School](https://www.holbertonschool.com/)
 
 ## 📖 OUR pseudocode and Diagram
 
+<p align="center"><img src="https://photos.app.goo.gl/DQARNXrtkuFBXzW2A" alt="diagrama adnres y cristian"></a></p>
 
 
 
