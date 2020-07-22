@@ -35,5 +35,6 @@ It is a project created for [Holberton School](https://www.holbertonschool.com/)
 
 ## By :copyright:
 
-* **Andres Hurtado** - [Twitter](https://twitter.com/Andrs85166364) * **Cristian Betancur** - [Twitter](https://twitter.com/cryptocoincanal)
+* **Andres Hurtado** - [Twitter](https://twitter.com/Andrs85166364) 
+* **Cristian Betancur** - [Twitter](https://twitter.com/cryptocoincanal)
 
