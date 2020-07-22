@@ -39,8 +39,7 @@ int _printf(const char *format, ...)
 				count += (f_controller(format[next]))(vl);
 				i++;
 			}
-			else if (format[next] != 'i' || format[next] != 'd' || format[next] != 's'
-			|| format[next] != 'c')
+			else
 				_putchar('%');
 		}
 		else
