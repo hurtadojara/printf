@@ -1,4 +1,38 @@
-# README
-## About printf project from Cristian Betancur and Andrés Hurtado
+# README of our printf
 
-Many programming languages implement a printf (print formatted) function, to display a formatted string. This, originally from the C programming language. The constant string format provides a description of the output, with placeholders marked by escape characters "%", to specify the relative location and type of output that the function should produce.
+## Description to the function
+
+It is a project created for [Holberton School](https://www.holbertonschool.com/) 
+
+## ✔ Requirements to run 
+
+🖥64-bit system , Ubuntu 14.04 , Windows 10 Whit Vagrant (VirtualBox)
+
+
+
+### ⌨ Conversions
+
+🔹- **s** = strings 
+
+🔹- **c** = characters
+
+🔹- **i** = integers
+
+🔹- **d** = decimals
+
+🔹- **%** = percentage signs
+
+🔹- **b** = binary
+
+
+
+## 📖 OUR pseudocode and Diagram
+
+<p align="center"><img src="https://raw.githubusercontent.com/dgquintero/dgquintero.github.io/master/images/Printfdiagram.png](https://raw.githubusercontent.com/dgquintero/dgquintero.github.io/master/images/Printfdiagram.png" alt="diagrama"></a></p>
+
+
+
+## By :copyright:
+
+* **Andres Hurtado** - [Twitter](https://twitter.com/Andrs85166364) * **Cristian Betancur** - [Twitter](https://twitter.com/cryptocoincanal)
+
